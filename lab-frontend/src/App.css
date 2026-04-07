@@ -1,0 +1,136 @@
+/* 1. تكسال الصفحة كاملة */
+#root {
+  width: 100vw !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh;
+  display: block;
+  /* بدلوها من flex لـ block باش ما تخلطش الـ wrapper */
+  background-color: #030712;
+}
+
+body {
+  background-color: #030712 !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. تنسيق الـ Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+/* 3. الحاوي الرئيسي (هذا اللي يوسط الكارطة) */
+.wrapper {
+  min-height: 85vh;
+  /* نقصنا شوية باش نحسبو حساب الـ Navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 4. كارت الدخول الزجاجي */
+.card-glass {
+  background: rgba(17, 24, 39, 0.95);
+  padding: 20px 45px !important;
+  /* نقصنا الـ Padding باش تتلم الكارطة */
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* 5. تنسيق الخانات */
+.card-glass input {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: white !important;
+  /* نحينا الـ !important من الـ border باش React يقدر يرجعو أحمر/أخضر */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px !important;
+  /* 10px ماشي 12px */
+  padding: 10px 15px !important;
+  /* صغرنا الخانات باش يرجعو كيما السيت الأصلي */
+  font-size: 13px !important;
+  width: 100%;
+  margin-bottom: 2px;
+  /* زيرنا الفراغ بين الخانات */
+  outline: none;
+  transition: 0.3s;
+}
+
+.card-glass input:focus {
+  border-color: #6366f1 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 6. الزر الملون */
+.btn-grad {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  /* اللون البنفسجي الأصلي تاعك */
+  border: none;
+  color: white;
+  font-weight: 900;
+  padding: 14px !important;
+  /* صغرناه شوية */
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.btn-grad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* 7. رسائل التنبيه */
+.success-msg {
+  color: #00ff88;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.error-msg {
+  color: #ff4d4d;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+
+
+/* 8. تنسيق أيقونة ORCID اللي نسيناها */
+.orcid-wrapper {
+  position: relative;
+}
+
+.orcid-wrapper input {
+  padding-left: 40px !important;
+  /* باش الكتيية ما تجيش فوق اللوغو */
+}
+
+.orcid-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: #a6ce39;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+  color: white;
+  pointer-events: none;
+}

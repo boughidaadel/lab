@@ -1,0 +1,4 @@
+lab-frontend/node_modules/
+lab-frontend/dist/
+.DS_Store
+*.log
