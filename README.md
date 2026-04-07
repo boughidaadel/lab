@@ -23,7 +23,7 @@ A professional management system for research laboratories built with **React** 
 lab_management/
 ├── lab-backend/     # PHP API files & Database connection
 ├── lab-frontend/    # React project (Vite)
-
+```
 
 Setup
 
