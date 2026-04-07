@@ -25,7 +25,7 @@ lab_management/
 ├── lab-frontend/    # React project (Vite)
 ```
 
-Setup
+## Setup
 
 ### 1. Backend Setup
 1. Move the entire project folder to your local server directory (e.g., `C:/xampp/htdocs/lab_management`).
